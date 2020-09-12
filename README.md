@@ -8,11 +8,11 @@ Primeiro comece com a instalação das dependencias do package.json usando o npm
 npm install
 ```
 
-Depois modifique o arquivo config.json colocando os tokens tudo certinho.
+Depois modifique o arquivo [config.json](https://github.com/HaruzinDev/BotLoopMusicYT/blob/master/json/config.json) colocando os tokens tudo certinho.
 
 ## Personalizando playlist
 
-Abre o arquivo lista.json e crie sua propria playlist
+Abre o arquivo [lista.json](https://github.com/HaruzinDev/BotLoopMusicYT/blob/master/json/lista.json) e crie sua propria playlist
 
 ```json
 {
