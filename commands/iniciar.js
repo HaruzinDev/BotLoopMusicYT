@@ -7,8 +7,6 @@ const config = require('../json/config.json');
 const YouTube = require('simple-youtube-api');
 const youtube = new YouTube(config.keyYT);
 
-let pagina = 0;
-
 module.exports.run = (client, message) => {
 
     //Essa permissão abaixo é opcional. This permission is optional.
@@ -22,11 +20,11 @@ const pesquisa = async (client, message) => {
 
     let song = queue.lista
     
-    let musicfs = song[pagina];
+    let musicfs = song[client.pagina];
     
     if(musicfs.loop1) {
-        pagina = 0;
-        let musicfs = song[pagina];
+        client.pagina = 0;
+        let musicfs = song[client.pagina];
         var resultado = await youtube.getVideo(musicfs.url);
 
      return playSong(client, message, resultado)
@@ -67,7 +65,7 @@ const playSong = async (client, message, resultado) => {
     });
     
     musica.dispatcher.on('finish', () => {
-        pagina++;
+        client.pagina++;
         pesquisa(client, message)
     });
 

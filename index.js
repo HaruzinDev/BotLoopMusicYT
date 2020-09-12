@@ -5,6 +5,9 @@ const client = new Discord.Client();
 const config = require("./data/config.json");
 client.config = config;
 
+let pagina = 0;
+client.pagina = pagina
+
 
 
 //EventHandler

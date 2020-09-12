@@ -8,7 +8,7 @@ module.exports.run = (client, message) => {
 
     let song = queue.lista
     
-    let musicfs = song[pagina];
+    let musicfs = song[client.pagina];
 
     const botA = client.user.displayAvatarURL();
 
