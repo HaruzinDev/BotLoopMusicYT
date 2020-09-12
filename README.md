@@ -2,17 +2,17 @@
 Este é um bot Discord.js que pretende ser um reprodutor de música em loop 24/7 totalmente personalizável.
 
 ## Como iniciar
-Primeiro comece com a instalação das dependencias do package.json usando o npm
+Primeiro comece com a instalação das dependencias do [package.json](https://github.com/HaruzinDev/BotLoopMusicYT/blob/master/package.json) usando o npm
 
 ```bash
 npm install
 ```
 
-Depois modifique o arquivo config.json colocando os tokens tudo certinho.
+Depois modifique o arquivo [config.json](https://github.com/HaruzinDev/BotLoopMusicYT/blob/master/json/config.json) colocando os tokens tudo certinho.
 
 ## Personalizando playlist
 
-Abre o arquivo lista.json e crie sua propria playlist
+Abre o arquivo [lista.json](https://github.com/HaruzinDev/BotLoopMusicYT/blob/master/json/lista.json) e crie sua propria playlist
 
 ```json
 {
